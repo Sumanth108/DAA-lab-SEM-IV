@@ -47,7 +47,7 @@ void main()
 	gets(t);
 	size=strlen(t);
 
-	printf("Enter the PATTERN string:");
+	printf("Enter the pattern string:");
 	gets(p);
 	p_size=strlen(p);
 	
