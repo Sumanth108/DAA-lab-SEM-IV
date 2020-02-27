@@ -44,20 +44,20 @@ void main()
 	char t[100],p[100];
 	
 	printf("Einput the input string:");
-	scanf("%s",t);
+	gets(t);
 	size=strlen(t);
 
 	printf("Enter the PATTERN string:");
-	scanf("%s",p);
+	gets(p);
 	p_size=strlen(p);
 	
 	
 	shift_table(p);
 	pos=horspool(t,p);
 	
-	if(pos)
-		printf("Found beginning at %d \n ",pos+1);
+	if(pos>0)
+		printf("Found, beginning at %d \n ",pos+1);
 	else
-		printf("Not Found");
+		printf("Not Found\n");
 		
 }
